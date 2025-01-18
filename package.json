@@ -1,6 +1,6 @@
 {
   "name": "window-wallpaper",
-  "version": "0.0.5",
+  "version": "2025.1",
   "description": "Node module that allows you to attach a window as wallpaper in Windows.",
   "main": "lib/window-wallpaper.js",
   "gypfile": true,
