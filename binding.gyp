@@ -1,10 +1,10 @@
 {
   "targets": [
     {
-      "target_name": "window-wallpaper",
+      "target_name": "window-desktop",
       "sources": [
         "src/bindings.cc",
-        "src/ww.cc"
+        "src/wd.cc"
       ],
       'include_dirs': ["<!@(node -p \"require('node-addon-api').include\")"],
       'dependencies': ["<!(node -p \"require('node-addon-api').gyp\")"],
