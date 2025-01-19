@@ -2,6 +2,8 @@
 
 BOOL CALLBACK wd::FindShellDLL(HWND hwnd, LPARAM param) {
 	shelldll = FindWindowEx(hwnd, NULL, L"SHELLDLL_DefView", NULL);
+
+	return TRUE;
 }
 
 BOOL CALLBACK wd::FindWorkerW(HWND hwnd, LPARAM param) {
