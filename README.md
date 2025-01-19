@@ -27,7 +27,7 @@ Documentation
 
 ```js
 const { app, BrowserWindow, globalShortcut } = require('electron');
-const WindowWallpaper = require('window-desktop');
+const WindowDesktop = require('window-desktop');
 const path = require('path');
 
 let mainWindow;
@@ -49,9 +49,9 @@ app.on('ready', () => {
   // Register a global shortcut for F11
   globalShortcut.register('F11', () => {
     if (isAttachedAsWallpaper) {
-      WindowWallpaper.detachWindow(mainWindow);
+      WindowDesktop.detachWindow(mainWindow);
     } else {
-      WindowWallpaper.attachAsWallpaper(mainWindow);
+      WindowDesktop.attachAsWallpaper(mainWindow);
     }
     isAttachedAsWallpaper = !isAttachedAsWallpaper; // Toggle the state
   });
