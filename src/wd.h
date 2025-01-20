@@ -6,10 +6,8 @@
 namespace wd {
 	static int WM_SPAWN_WORKER = 0x052C;
 
-	static HWND shelldll = NULL;
 	static HWND workerw = NULL;
 
-	BOOL CALLBACK FindShellDLL(HWND, LPARAM);
 	BOOL CALLBACK FindWorkerW(HWND, LPARAM);
 
 	void AttachAsWallpaper(unsigned char*);
