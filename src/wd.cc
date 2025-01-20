@@ -55,7 +55,7 @@ void wd::AttachAsIcons(unsigned char* handleBuffer) {
 	EnumWindows(&FindWorkerW, reinterpret_cast<LPARAM>(&workerw));
 
 	RECT rect;
-	GetWindowRect(hwnd, &rect)
+	GetWindowRect(hwnd, &rect);
 
 	SetWindowPos(hwnd, workerw, rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top, 0x0000);
 }
