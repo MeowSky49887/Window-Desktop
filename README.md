@@ -16,9 +16,7 @@ Install `window-desktop` by running:
 
 ```sh
 $ npm install --save https://github.com/MeowSky49887/window-desktop.git
-```
-
-Native binaries for win, mac and linux are prebuilt and downloaded when the module is installed.
+```
 
 Documentation
 -------------
