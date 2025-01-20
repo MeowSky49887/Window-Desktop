@@ -3,7 +3,7 @@
 window-desktop
 ================
 
-> Node module that allows you to attach a window as wallpaper in Windows.
+> Node module that allows you to attach a window as desktop's wallpaper or desktops's icons in Windows.
 
 *This module only supports Windows (Tested on Windows 10)*
 
