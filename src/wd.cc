@@ -1,11 +1,5 @@
 #include "wd.h"
 
-BOOL CALLBACK wd::FindShellDLL(HWND hwnd, LPARAM param) {
-	shelldll = FindWindowEx(hwnd, NULL, L"SHELLDLL_DefView", NULL);
-
-	return TRUE;
-}
-
 BOOL CALLBACK wd::FindWorkerW(HWND hwnd, LPARAM param) {
 	HWND temp = FindWindowEx(hwnd, NULL, L"SHELLDLL_DefView", NULL);
 
@@ -58,9 +52,12 @@ void wd::AttachAsIcons(unsigned char* handleBuffer) {
 	if (!result) {
 	}
 
-	EnumWindows(&FindShellDLL, reinterpret_cast<LPARAM>(&shelldll));
+	EnumWindows(&FindWorkerW, reinterpret_cast<LPARAM>(&workerw));
 
-	SetParent(hwnd, shelldll);
+	RECT rect;
+	GetWindowRect(hwnd, &rect)
+
+	SetWindowPos(hwnd, workerw, rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top, 0x0000);
 }
 
 void wd::DetachWindow(unsigned char* handleBuffer) {
