@@ -15,8 +15,9 @@ Installation
 Install `window-desktop` by running:
 
 ```sh
-$ npm install --save https://github.com/MeowSky49887/window-desktop.git
-```
+$ npm install --save https://github.com/MeowSky49887/Window-Desktop.git
+```
+
 
 Documentation
 -------------
