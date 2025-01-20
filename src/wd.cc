@@ -1,6 +1,6 @@
 #include "wd.h"
 
-BOOL CALLBACK ew::FindWorkerW(HWND hwnd, LPARAM param) {
+BOOL CALLBACK wd::FindWorkerW(HWND hwnd, LPARAM param) {
 	HWND shelldll = FindWindowEx(hwnd, NULL, L"SHELLDLL_DefView", NULL);
 
 	if (shelldll) {
